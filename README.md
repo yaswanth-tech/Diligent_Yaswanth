@@ -1,67 +1,60 @@
-Ironman Jarvis
+🛡️ Ironman Jarvis: Enterprise Intelligence
+Ironman Jarvis is a high-performance, professional AI assistant engineered for the modern enterprise. Built on the principles of Retrieval-Augmented Generation (RAG), this system enables users to upload proprietary data—such as internal policies or project specs—allowing the AI to deliver precise, context-aware intelligence without data leakage.
 
-Ironman Jarvis is a professional AI-powered enterprise assistant built using Retrieval-Augmented Generation principles. The application allows users to inject company-specific knowledge dynamically and receive accurate, context-aware responses using a large language model. The system is designed for internal enterprise usage with a clean UI and simple architecture.
+🚀 Project Overview
+This application serves as a blueprint for a secure corporate digital assistant. By combining a sleek user interface with a powerful open-source backbone, it provides a "Zero-Hallucination" environment where the AI speaks only from the facts you provide.
 
-Project Description
+Core Capabilities
+Dynamic Knowledge Injection: Users can "program" the assistant in real-time by feeding it specific documents or text. * Precision Intelligence: Leverages Mistral-7B-Instruct-v0.2, an industry-leading open-source LLM that rivals LLaMA in reasoning and logic.
 
-This project demonstrates how an enterprise assistant can be built using Streamlit and an open-source large language model. The assistant answers questions strictly based on the context provided by the user, avoiding hallucinations. The application uses Mistral-7B-Instruct-v0.2 through Hugging Face and LangChain for orchestration.
+Secure Infrastructure: Designed for internal deployment using Streamlit for a responsive, dashboard-like experience.
 
-Technology Stack
+🛠️ Technical Architecture
+Interface Layer: Streamlit (Python-based UI)
 
-Frontend: Streamlit
-Language Model: Mistral-7B-Instruct-v0.2
-AI Framework: LangChain
-Model Hosting: Hugging Face Hub
-Language: Python
-Styling: Custom CSS
+Intelligence Core: Mistral-7B-Instruct-v0.2
 
-Project Structure
+Orchestration: LangChain (Managing the flow of data and prompts)
 
-Diligent_Jarvis
-app.py
-requirements.txt
-style.css
-.env
-README.md
+Cloud Gateway: Hugging Face Hub (Serverless Inference API)
 
-Environment Requirements
+Design: Custom CSS for a professional enterprise aesthetic
 
-Python version 3.8 or higher
-Hugging Face account
-Hugging Face API token
-
-Installation and Setup
-
-Step 1: Clone the repository
-
+📂 System Structure
+Plaintext
+Ironman_Jarvis/
+├── app.py             # Main application logic
+├── requirements.txt   # Dependency manifest
+├── style.css          # Custom UI styling
+├── .env               # Secure API credentials (Local only)
+└── README.md          # Project documentation
+⚙️ Installation & Deployment
+1. Repository Setup
+Bash
 git clone https://github.com/YourUsername/Diligent_Jarvis.git
-
 cd Diligent_Jarvis
+2. Environment Configuration
+It is recommended to use a virtual environment to keep dependencies isolated:
 
-Step 2: Create and activate virtual environment
-
+Bash
+# Initialize environment
 python -m venv venv
 
-Windows:
+# Activation (Windows)
 .\venv\Scripts\activate
 
-Mac or Linux:
+# Activation (Mac/Linux)
 source venv/bin/activate
-
-Step 3: Install dependencies
-
+3. Dependency Installation
+Bash
 pip install -r requirements.txt
+4. API Authentication
+Create a .env file in the root directory. This keeps your credentials secure and prevents them from being leaked to GitHub.
 
-Step 4: Create environment variable file
-
-Create a file named .env in the root directory and add:
-
+Bash
 HF_TOKEN=your_hugging_face_token_here
+🖥️ Execution
+To launch the Jarvis interface, execute the following command:
 
-Do not upload the .env file to GitHub.
-
-Running the Application
-
-Start the application using:
-
+Bash
 streamlit run app.py

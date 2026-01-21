@@ -21,13 +21,13 @@ Cloud Gateway: Hugging Face Hub (Serverless Inference API)
 Design: Custom CSS for a professional enterprise aesthetic
 
 📂 System Structure
-Plaintext
 Ironman_Jarvis/
 ├── app.py             # Main application logic
 ├── requirements.txt   # Dependency manifest
 ├── style.css          # Custom UI styling
 ├── .env               # Secure API credentials (Local only)
 └── README.md          # Project documentation
+
 ⚙️ Installation & Deployment
 1. Repository Setup
 Bash
@@ -43,7 +43,6 @@ python -m venv venv
 # Activation (Windows)
 .\venv\Scripts\activate
 
-# Activation (Mac/Linux)
 source venv/bin/activate
 3. Dependency Installation
 Bash

@@ -55,6 +55,7 @@ Create a .env file in the root directory. This keeps your credentials secure and
 
 Bash
 HF_TOKEN=your_hugging_face_token_here
+
 🖥️ Execution
 To launch the Jarvis interface, execute the following command:
 

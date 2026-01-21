@@ -1,0 +1,60 @@
+/* Main Application Background */
+.stApp {
+    background: linear-gradient(135deg, #1b62ef 0%, #1e293b 100%);
+    color: #dde0e2;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar Customization */
+section[data-testid="stSidebar"] {
+    background-color: rgba(240, 240, 241, 0.8);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Chat Message Styling */
+.stChatMessage {
+    background-color: rgba(234, 239, 247, 0.7);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for messages */
+.stChatMessage:hover {
+    border-color: #38bdf8;
+    background-color: rgba(30, 41, 59, 0.9);
+}
+
+/* Attractive Gradient Button */
+div.stButton > button {
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 700;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+}
+
+div.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
+    background: linear-gradient(90deg, #0ea5e9, #6366f1);
+}
+
+/* Input Box Styling */
+.stChatInputContainer {
+    padding-bottom: 2rem;
+}
+
+.stChatInputContainer > div {
+    background-color: #1e293b !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 15px !important;
+}

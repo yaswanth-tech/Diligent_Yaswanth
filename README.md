@@ -61,14 +61,3 @@ To launch the Jarvis interface, execute the following command:
 
 Bash
 streamlit run app.py
-
-**1. App Interface**
-![App Interface](output%20images/output1.png)
-
-**2. RESPONSE 1**
-![RAG Response](output%20images/output2.png)
-
-**3. RESPONSE 2**
-![Feature Demo](output%20images/output3.png)
----
-*Submitted by Rajana Yaswanth.*
